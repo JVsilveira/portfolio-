@@ -1,32 +1,32 @@
-document.querySelectorAll('.navbar a').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
+document.querySelectorAll(".navbar a").forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault()
 
-    const target = document.querySelector(this.getAttribute('href'));
-    if (!target) return;
+    const target = document.querySelector(this.getAttribute("href"))
+    if (!target) return
 
-    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 200; 
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    const duration = 1500;
-    let start = null;
+    const targetPosition =
+      target.getBoundingClientRect().top + window.pageYOffset - 200
+    const startPosition = window.pageYOffset
+    const distance = targetPosition - startPosition
+    const duration = 1500
+    let start = null
 
     function animation(currentTime) {
-      if (start === null) start = currentTime;
-      const progress = currentTime - start;
-      const easing = easeInOutQuad(progress / duration); 
-      window.scrollTo(0, startPosition + distance * easing);
-      if (progress < duration) requestAnimationFrame(animation);
+      if (start === null) start = currentTime
+      const progress = currentTime - start
+      const easing = easeInOutQuad(progress / duration)
+      window.scrollTo(0, startPosition + distance * easing)
+      if (progress < duration) requestAnimationFrame(animation)
     }
 
     function easeInOutQuad(t) {
-      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t
     }
 
-    requestAnimationFrame(animation);
-  });
-});
-
+    requestAnimationFrame(animation)
+  })
+})
 
 const projetos = [
   {
@@ -34,34 +34,34 @@ const projetos = [
     tecnologias: ["HTML, CSS, Javascript, Axios, React.js"],
     descricao: `
     Esse projeto foi desenvolvido no curso da Cod3r focado no desenvolvimento de uma crud simples de usuários, onde aprendi o conceito do Create, Read, Update e Delete.`,
-    link: "<a href='https://crud-omega-one.vercel.app/' class= 'contact-link' target='_blank'>Ver projeto</a>"
+    link: "<a href='https://crud-omega-one.vercel.app/' class= 'contact-link' target='_blank'>Ver projeto</a>",
   },
   {
     nome: "Mercado",
     tecnologias: ["Javascript, HTML, CSS"],
     descricao: `
     Esse projeto foi desenvolvido para focar no desenvolvimento da estetística de webpages apontadas para um sistema de mercado`,
-   
-    link: "<a href='https://jvsilveira.github.io/supermarket/?#' class= 'contact-link' target='_blank'>Ver projeto</a>"
+
+    link: "<a href='https://jvsilveira.github.io/supermarket/?#' class= 'contact-link' target='_blank'>Ver projeto</a>",
   },
   {
     nome: "Calculadora React",
     tecnologias: ["HTML", "CSS", "JavaScript, React.js"],
     descricao: `
     Projeto desenvolvido juntamente ao curso da Cod3r, onde aprendi a executar funções, construtores e props no react para criar uma calculadora funcional.`,
-    link: "<a href='https://calculadora-rho-vert.vercel.app/' class= 'contact-link' target='_blank'>Ver projeto</a>"
-  }
-];
+    link: "<a href='https://calculadora-rho-vert.vercel.app/' class= 'contact-link' target='_blank'>Ver projeto</a>",
+  },
+]
 
-let index = 0;
+let index = 0
 
-const projetoSection = document.querySelector("#whatido");
+const projetoSection = document.querySelector("#whatido")
 
 function atualizarProjeto() {
-  if (!projetoSection) return;
-  
-  const p = projetos[index];
-  
+  if (!projetoSection) return
+
+  const p = projetos[index]
+
   projetoSection.innerHTML = `
   
     <div class="button">
@@ -82,7 +82,9 @@ function atualizarProjeto() {
 
     <div class="indent-2 code-line descricao">
       <span class="pink">tecnologias</span><span class="white">:</span>
-      <span class="yellow">[${p.tecnologias.map(t => `"${t}"`).join(", ")}]</span><span class="white">,</span>
+      <span class="yellow">[${p.tecnologias
+        .map(t => `"${t}"`)
+        .join(", ")}]<span class="white">,</span></span>
     </div>
 
     <div class="indent-2 code-line multiline">
@@ -108,17 +110,17 @@ function atualizarProjeto() {
     <button id="next" class="arrow">&#10095;</button>
     </div>
     
-  `;
+  `
 
   document.getElementById("prev").addEventListener("click", () => {
-    index = (index - 1 + projetos.length) % projetos.length;
-    atualizarProjeto();
-  });
+    index = (index - 1 + projetos.length) % projetos.length
+    atualizarProjeto()
+  })
 
   document.getElementById("next").addEventListener("click", () => {
-    index = (index + 1) % projetos.length;
-    atualizarProjeto();
-  });
+    index = (index + 1) % projetos.length
+    atualizarProjeto()
+  })
 }
 
-document.addEventListener("DOMContentLoaded", atualizarProjeto);
+document.addEventListener("DOMContentLoaded", atualizarProjeto)
