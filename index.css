@@ -7,10 +7,10 @@
 body {
   background-color: #404254;
   color: #bf9eee;
-  font-family: 'Fira Code', monospace;
-  display: flex;  
+  font-family: "Fira Code", monospace;
+  display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
 }
 
@@ -27,7 +27,9 @@ body {
   background-color: #292930;
   border-radius: 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 0.4s ease, background-color 0.3s ease;
+  transition:
+    box-shadow 0.4s ease,
+    background-color 0.3s ease;
   z-index: 1000;
 }
 
@@ -79,14 +81,14 @@ body {
   border-radius: 16px;
   padding: 2rem 3rem;
   text-align: left;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   line-height: 1.6;
   color: #fff;
-  white-space: pre-wrap;
   overflow-wrap: break-word;
   box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4);
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
+  height: 600px;
   margin: 20vh;
 }
 
@@ -95,21 +97,20 @@ body {
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  gap: 0.3rem; 
-  white-space: pre; 
+  gap: 0.3rem;
+  white-space: pre;
 }
 
 .code-line span.pink {
   display: inline-block;
-  min-width: 100px; 
-  text-align: right; 
-  margin-right: 0.2rem; 
+  min-width: 100px;
+  text-align: right;
+  margin-right: 0.2rem;
 }
 
 .code-line span.white {
-  margin-left: 0; 
+  margin-left: 0;
 }
-
 
 .descricao {
   color: #e7ee98;
@@ -119,7 +120,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   max-width: 100%;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
 }
 
 .pink {
@@ -138,17 +139,24 @@ body {
   color: #e7ee98;
 }
 
-.indent-1 { margin-left: 2rem; text-align: justify;}
-.indent-2 { margin-left: 4rem; text-align: justify;}
-.indent-3 { margin-left: 6rem; text-align: justify;}
+.indent-1 {
+  margin-left: 2rem;
+  text-align: justify;
+}
+.indent-2 {
+  margin-left: 4rem;
+  text-align: justify;
+}
+.indent-3 {
+  margin-left: 6rem;
+  text-align: justify;
+}
 
-
-#whatido{
+#whatido {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }
 
 .carrousel {
@@ -159,7 +167,7 @@ body {
   padding: 20px;
 }
 
-.button{
+.button {
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -184,7 +192,6 @@ body {
   color: #97e1f1;
 }
 
-
 .contact-section {
   display: flex;
   width: 100%;
@@ -204,13 +211,14 @@ body {
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
-  
 }
 
 .contact-link img {
   width: 48px;
   height: 48px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .contact-link:link,
@@ -220,7 +228,6 @@ body {
   text-decoration: none;
   color: #97e1f1;
 }
-
 
 .contact-link:hover img {
   transform: scale(1.15);
@@ -239,14 +246,12 @@ footer {
   gap: 10px;
 }
 
-
 @media (max-width: 600px) {
-
   body {
-  display: flex;  
-  flex-direction: column;
-  align-items: center;  
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar {
@@ -261,32 +266,32 @@ footer {
     left: 50%;
     gap: 0;
     border-radius: 20px;
-    overflow: hidden; 
+    overflow: hidden;
   }
 
   .navChild,
   .navChild1,
   .navChild2 {
-  flex: 1;
-  text-align: center;
-  text-decoration: none;
-  color: #97e1f1;
-  transition: background-color 0.3s ease;
-}
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #97e1f1;
+    transition: background-color 0.3s ease;
+  }
 
   .navChild {
-  border-radius: 12px 0 0 12px;
-}
+    border-radius: 12px 0 0 12px;
+  }
 
   .navChild2 {
-  border-radius: 0 12px 12px 0;
-}
+    border-radius: 0 12px 12px 0;
+  }
 
-.navChild:hover,
-.navChild1:hover,
-.navChild2:hover {
-  background-color: #393940;
-}
+  .navChild:hover,
+  .navChild1:hover,
+  .navChild2:hover {
+    background-color: #393940;
+  }
 
   .container {
     width: 90vw;
@@ -306,9 +311,21 @@ footer {
     font-size: 0.7rem;
   }
 
-  .indent-1 { margin-left: 0.3rem; text-align: justify; overflow: hidden;}
-  .indent-2 { margin-left: 0.8rem; text-align: justify; overflow: hidden;}
-  .indent-3 { margin-left: 1.5rem; text-align: justify; overflow: hidden;}
+  .indent-1 {
+    margin-left: 0.3rem;
+    text-align: justify;
+    overflow: hidden;
+  }
+  .indent-2 {
+    margin-left: 0.8rem;
+    text-align: justify;
+    overflow: hidden;
+  }
+  .indent-3 {
+    margin-left: 1.5rem;
+    text-align: justify;
+    overflow: hidden;
+  }
 
   #whatido {
     flex-direction: column;
@@ -359,6 +376,6 @@ footer {
     left: 50%;
     gap: 0;
     border-radius: 20px;
-    overflow: hidden; 
+    overflow: hidden;
   }
 }
