@@ -30,6 +30,13 @@ document.querySelectorAll(".navbar a").forEach(link => {
 
 const projetos = [
   {
+    nome: "Bactérias",
+    tecnologias: ["NEST", "CSS", "JavaScript, NEXT, POSTGRESQL"],
+    descricao: `
+    Desenvolvi uma aplicação full stack para gerenciamento e consulta de bactérias utilizando Next.js, NestJS, PostgreSQL e Prisma. O sistema possui cadastro e pesquisa de registros, validações de dados e integração entre frontend e API REST. O projeto foi implantado em produção utilizando Vercel e desenvolvido com foco em escalabilidade, organização do código e boas práticas de arquitetura de software. A experiência permitiu aprofundar conhecimentos em desenvolvimento full stack, banco de dados relacionais, APIs REST e deploy de aplicações modernas.`,
+    link: "<a href='https://bacterias-psi.vercel.app/' class= 'contact-link' target='_blank'>Ver projeto</a>",
+  },
+  {
     nome: "CRUD",
     tecnologias: ["HTML, CSS, Javascript, Axios, React.js"],
     descricao: `
