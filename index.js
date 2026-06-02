@@ -47,7 +47,7 @@ const projetos = [
     nome: "Mercado",
     tecnologias: ["Javascript, HTML, CSS"],
     descricao: `
-    Esse projeto foi desenvolvido para focar no desenvolvimento da estetística de webpages apontadas para um sistema de mercado`,
+    Aplicação web desenvolvida com HTML, CSS e JavaScript puro, simulando a interface de um supermercado online. O projeto foi criado com o objetivo de praticar conceitos fundamentais de desenvolvimento Front-End, incluindo responsividade, manipulação do DOM, organização de componentes visuais e interatividade utilizando JavaScript.`,
 
     link: "<a href='https://jvsilveira.github.io/supermarket/?#' class= 'contact-link' target='_blank'>Ver projeto</a>",
   },
