@@ -3,7 +3,10 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      name="viewport"
+    />
     <meta content="#181b22" name="theme-color" />
     <meta
       content="Portfólio de João Vitor Silveira, desenvolvedor full stack. Conheça meus projetos, tecnologias e formas de contato."
@@ -28,7 +31,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <path d="M9 3h8l4 4v13H9zM17 3v5h4M5 7H3v14h12"></path>
         </symbol>
@@ -39,7 +42,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"></path>
         </symbol>
@@ -50,7 +53,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <circle cx="6" cy="5" r="2"></circle>
           <circle cx="18" cy="6" r="2"></circle>
@@ -64,7 +67,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <rect height="14" rx="2" width="18" x="3" y="5"></rect>
           <path d="m3 7 9 6 9-6"></path>
@@ -76,7 +79,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <path d="m6 9 6 6 6-6"></path>
         </symbol>
@@ -87,7 +90,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <path
             d="M14 3h7v7m0-7L10 14m-1-9H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"
@@ -100,7 +103,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <path d="M8 3H6v7l-3 2 3 2v7h2m8-18h2v7l3 2-3 2v7h-2"></path>
         </symbol>
@@ -111,7 +114,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <rect height="14" rx="2" width="20" x="2" y="5"></rect>
           <path d="M5 15V9l3 3 3-3v6m5-6v6m-2-2 2 2 2-2"></path>
@@ -123,7 +126,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
           <ellipse
@@ -155,7 +158,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
           <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"></path>
@@ -167,7 +170,7 @@
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="1.5"
-          viewbox="0 0 24 24"
+          viewBox="0 0 24 24"
         >
           <path
             d="M12 8c-8-7-14 4-7 11 3 3 4 0 7 0s4 3 7 0c7-7 1-18-7-11Zm0 0c0-4 3-6 6-5-1 3-3 4-6 5Z"
@@ -177,11 +180,29 @@
     </svg>
     <a class="skip-link" href="#content">Ir para o conteúdo</a>
     <header class="titlebar">
+      <button
+        aria-controls="mobile-files"
+        aria-expanded="false"
+        aria-haspopup="false"
+        class="mobile-files-toggle"
+        id="mobile-files-toggle"
+        type="button"
+      >
+        <svg aria-hidden="true" class="icon" focusable="false">
+          <use href="#icon-files"></use></svg
+        ><span>Arquivos</span
+        ><svg aria-hidden="true" class="icon files-chevron" focusable="false">
+          <use href="#icon-chevron"></use>
+        </svg>
+      </button>
       <span aria-hidden="true" class="editor-logo"
         ><svg aria-hidden="true" class="icon" focusable="false">
           <use href="#icon-code"></use></svg
       ></span>
-      <span class="window-title">joao-vitor — portfolio</span>
+      <span class="window-title"
+        ><span class="desktop-window-title">joao-vitor — portfolio</span
+        ><span class="mobile-window-title">portfolio</span></span
+      >
       <a
         class="title-github"
         href="https://github.com/JVsilveira"
@@ -194,33 +215,51 @@
     </header>
     <div class="workspace">
       <nav aria-label="Navegação rápida" class="activitybar">
-        <a aria-label="Sobre mim" class="active" data-page="me" href="#me"
-          ><svg aria-hidden="true" class="icon" focusable="false">
-            <use href="#icon-files"></use></svg
-        ></a>
-        <a aria-label="Tecnologias" data-page="activity" href="#activity"
+        <button
+          aria-controls="desktop-explorer"
+          aria-expanded="true"
+          aria-label="Ocultar explorador"
+          class="active"
+          id="explorer-toggle"
+          type="button"
+        >
+          <svg aria-hidden="true" class="icon" focusable="false">
+            <use href="#icon-files"></use>
+          </svg>
+        </button>
+        <span aria-hidden="true" class="activity-decoration"
           ><svg aria-hidden="true" class="icon" focusable="false">
             <use href="#icon-code"></use></svg
-        ></a>
-        <a aria-label="Projetos" data-page="whatido" href="#whatido"
+        ></span>
+        <span aria-hidden="true" class="activity-decoration"
           ><svg aria-hidden="true" class="icon" focusable="false">
             <use href="#icon-branch"></use></svg
-        ></a>
-        <a aria-label="Contato" data-page="contact" href="#contact"
+        ></span>
+        <span aria-hidden="true" class="activity-decoration"
           ><svg aria-hidden="true" class="icon" focusable="false">
             <use href="#icon-mail"></use></svg
-        ></a>
+        ></span>
         <span aria-hidden="true" class="activity-bottom">JV</span>
       </nav>
-      <aside class="explorer">
+      <aside class="explorer" id="desktop-explorer">
         <div class="explorer-heading">Explorador</div>
-        <div class="folder-name">
+        <button
+          aria-controls="desktop-files"
+          aria-expanded="true"
+          class="folder-name"
+          id="folder-toggle"
+          type="button"
+        >
           <svg aria-hidden="true" class="icon" focusable="false">
             <use href="#icon-chevron"></use>
           </svg>
           portfolio
-        </div>
-        <nav aria-label="Arquivos do portfólio" class="file-list">
+        </button>
+        <nav
+          aria-label="Arquivos do portfólio"
+          class="file-list"
+          id="desktop-files"
+        >
           <a class="active" data-page="me" href="#me"
             ><span class="file-icon ts typescript-icon">TS</span>
             sobre-mim.ts</a
@@ -252,25 +291,25 @@
         <nav aria-label="Seções do portfólio" class="tabs">
           <a class="active" data-page="me" href="#me"
             ><span class="file-icon ts typescript-icon">TS</span
-            ><span>sobre-mim.ts</span></a
+            ><span>sobre-mim<span class="tab-extension">.ts</span></span></a
           >
           <a data-page="activity" href="#activity"
             ><span class="file-icon json"
               ><svg aria-hidden="true" class="icon" focusable="false">
                 <use href="#icon-json"></use></svg></span
-            ><span>tecnologias.json</span></a
+            ><span>tecnologias<span class="tab-extension">.json</span></span></a
           >
           <a data-page="whatido" href="#whatido"
             ><span class="file-icon react"
               ><svg aria-hidden="true" class="icon" focusable="false">
                 <use href="#icon-react"></use></svg></span
-            ><span>projetos.tsx</span></a
+            ><span>projetos<span class="tab-extension">.tsx</span></span></a
           >
           <a data-page="contact" href="#contact"
             ><span class="file-icon md"
               ><svg aria-hidden="true" class="icon" focusable="false">
                 <use href="#icon-markdown"></use></svg></span
-            ><span>contato.md</span></a
+            ><span>contato<span class="tab-extension">.md</span></span></a
           >
         </nav>
         <div class="breadcrumbs">
@@ -284,22 +323,7 @@
                 <h1 id="about-title">João Vitor<br />Silveira</h1>
                 <p class="role">Desenvolvedor full stack</p>
                 <p class="hero-description">
-                  Desenvolvimento web com React, TypeScript e Python.
-                </p>
-                <div class="hero-actions">
-                  <a class="button primary" data-page="whatido" href="#whatido"
-                    >Ver projetos
-                    <svg aria-hidden="true" class="icon" focusable="false">
-                      <use href="#icon-external"></use></svg></a
-                  ><a
-                    class="button secondary"
-                    data-page="contact"
-                    href="#contact"
-                    >Contato</a
-                  >
-                </div>
-                <p class="availability">
-                  <span></span> Aberto a novas oportunidades
+                  Desenvolvimento web com React, TypeScript, Python e Java.
                 </p>
               </div>
               <div aria-label="Resumo do perfil" class="profile-code">
@@ -338,7 +362,17 @@
                   </li>
                   <li>
                     <code class="indent-2">
-                      <span class="orange">"Python"</span></code
+                      <span class="orange">"Python"</span>,</code
+                    >
+                  </li>
+                  <li>
+                    <code class="indent-2"
+                      ><span class="orange">"Java"</span>,</code
+                    >
+                  </li>
+                  <li>
+                    <code class="indent-2"
+                      ><span class="orange">"Spring Boot"</span></code
                     >
                   </li>
                   <li><code class="indent-1"> ]</code></li>
@@ -358,8 +392,57 @@
               <div class="stack-summary">
                 <span class="comment">Stack principal</span>
                 <div>
-                  <span>React</span><span>TypeScript</span><span>Python</span
-                  ><span>FastAPI</span><span>PostgreSQL</span>
+                  <span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/react.svg"
+                      width="22"
+                    />React</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/typescript.svg"
+                      width="22"
+                    />TypeScript</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/python.svg"
+                      width="22"
+                    />Python</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/fastapi.svg"
+                      width="22"
+                    />FastAPI</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/postgresql.svg"
+                      width="22"
+                    />PostgreSQL</span
+                  >
+                  <span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/java.svg"
+                      width="22"
+                    />Java</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/springboot.svg"
+                      width="22"
+                    />Spring Boot</span
+                  >
                 </div>
               </div>
             </div>
@@ -378,7 +461,13 @@
                   <span
                     ><img alt="" src="icons/javascript.svg" />JavaScript</span
                   ><span><img alt="" src="icons/react.svg" />React</span
-                  ><span>TypeScript</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/typescript.svg"
+                      width="22"
+                    />TypeScript</span
                   ><span><img alt="" src="icons/html-5.svg" />HTML</span
                   ><span><img alt="" src="icons/css-3.svg" />CSS</span>
                 </div>
@@ -387,17 +476,57 @@
                 <h2>Back-end</h2>
                 <div class="tech-items">
                   <span><img alt="" src="icons/python.svg" />Python</span
-                  ><span>FastAPI</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/fastapi.svg"
+                      width="22"
+                    />FastAPI</span
                   ><span><img alt="" src="icons/java.svg" />Java</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/springboot.svg"
+                      width="22"
+                    />Spring Boot</span
                   ><span><img alt="" src="icons/nodejs-icon.svg" />Node.js</span
-                  ><span>APIs REST</span>
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/rest-api.svg"
+                      width="22"
+                    />APIs REST</span
+                  >
                 </div>
               </article>
               <article>
                 <h2>Dados e versionamento</h2>
                 <div class="tech-items">
-                  <span>PostgreSQL</span><span>MySQL</span><span>Git</span
-                  ><span><img alt="" src="icons/github.svg" />GitHub</span>
+                  <span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/postgresql.svg"
+                      width="22"
+                    />PostgreSQL</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/mysql.svg"
+                      width="22"
+                    />MySQL</span
+                  ><span
+                    ><img
+                      alt=""
+                      height="22"
+                      src="icons/git.svg"
+                      width="22"
+                    />Git</span
+                  ><span><img alt="" src="icons/github.svg?v=2" />GitHub</span>
                 </div>
               </article>
             </div>
@@ -651,7 +780,7 @@
                 href="https://github.com/JVsilveira"
                 rel="noopener noreferrer"
                 target="_blank"
-                ><img alt="" src="icons/github.svg" />
+                ><img alt="" src="icons/github.svg?v=2" />
                 <div>
                   <h2>GitHub</h2>
                 </div>
@@ -672,14 +801,29 @@
               ></a>
             </div>
           </section>
+          <section class="empty-editor" hidden="" id="empty-editor">
+            <svg
+              aria-label="Marca do editor"
+              class="editor-watermark"
+              role="img"
+              viewBox="0 0 350 310"
+            >
+              <path
+                d="M235 32c5-5 11-6 17-3l55 27v198l-56 28c-6 3-12 2-17-3L132 190l-39 31c-7 5-14 4-20-2l-13-13c-5-6-5-14 1-19l45-35-45-35c-6-5-6-13-1-19l13-13c6-6 13-7 20-2l39 31L235 32Zm14 68-68 52 68 52V100Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </section>
         </main>
         <section aria-label="Terminal de apresentação" class="terminal">
           <div class="terminal-heading">
             <span>Terminal</span><span class="terminal-shell">bash</span
             ><button
               aria-controls="terminal-content"
-              aria-expanded="false"
-              aria-label="Expandir terminal"
+              aria-expanded="true"
+              aria-label="Recolher terminal"
+              class="is-expanded"
               id="terminal-toggle"
               type="button"
             >
@@ -688,10 +832,15 @@
               </svg>
             </button>
           </div>
-          <div hidden="" id="terminal-content">
+          <div id="terminal-content">
             <p>
               <span class="green">joao@portfolio</span>
               <span class="blue">~</span> $ npm run dev
+            </p>
+            <p>
+              <span class="green">joao@portfolio</span>
+              <span class="blue">~</span> $
+              <span aria-hidden="true" class="terminal-cursor"></span>
             </p>
           </div>
         </section>
@@ -708,5 +857,52 @@
         <span aria-hidden="true">{ }</span></span
       >
     </footer>
+    <dialog
+      aria-labelledby="mobile-files-title"
+      class="mobile-files"
+      id="mobile-files"
+    >
+      <div class="mobile-files-heading">
+        <h2 id="mobile-files-title">Explorador</h2>
+      </div>
+      <button
+        aria-controls="mobile-file-list"
+        aria-expanded="true"
+        class="mobile-folder"
+        id="mobile-folder-toggle"
+        type="button"
+      >
+        <svg aria-hidden="true" class="icon" focusable="false">
+          <use href="#icon-chevron"></use>
+        </svg>
+        portfolio / src
+      </button>
+      <nav aria-label="Abrir arquivo" class="file-list" id="mobile-file-list">
+        <a class="active" data-page="me" href="#me"
+          ><span class="file-icon ts typescript-icon">TS</span> sobre-mim.ts</a
+        >
+        <a data-page="activity" href="#activity"
+          ><span class="file-icon json"
+            ><svg aria-hidden="true" class="icon" focusable="false">
+              <use href="#icon-json"></use></svg
+          ></span>
+          tecnologias.json</a
+        >
+        <a data-page="whatido" href="#whatido"
+          ><span class="file-icon react"
+            ><svg aria-hidden="true" class="icon" focusable="false">
+              <use href="#icon-react"></use></svg
+          ></span>
+          projetos.tsx <span class="file-count">6</span></a
+        >
+        <a data-page="contact" href="#contact"
+          ><span class="file-icon md"
+            ><svg aria-hidden="true" class="icon" focusable="false">
+              <use href="#icon-markdown"></use></svg
+          ></span>
+          contato.md</a
+        >
+      </nav>
+    </dialog>
   </body>
 </html>
